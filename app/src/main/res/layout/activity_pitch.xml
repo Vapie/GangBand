@@ -3,24 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/txtFrequency"
+
+    <Button
+        android:id="@+id/button13"
+        android:onClick="gotoclavier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:padding="@dimen/padding_medium"
-        android:text="@string/mainactivity_waiting"
-        />
+        android:text="Clavier" />
 
-    <TextView
-        android:id="@+id/txtNote"
-        android:layout_width="wrap_content"
+    <Spinner
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/txtFrequency"
-        android:padding="@dimen/padding_medium"
-        android:text="@string/mainactivity_waiting"
+        android:id="@+id/spinner"
         />
-
 </RelativeLayout>

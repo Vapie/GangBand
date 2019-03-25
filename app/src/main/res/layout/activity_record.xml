@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000"
+    android:orientation="vertical"
+    android:weightSum="11"
+    android:id="@+id/Record">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="0">
+            <android.support.design.button.MaterialButton
+
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:id="@+id/rec"
+                android:text="start record"/>
+            <android.support.design.button.MaterialButton
+
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:id="@+id/clavier"
+                android:text="Clavier"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="gotoclavier"/>
+
+<!--
+            <android.support.design.button.MaterialButton
+
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:id="@+id/diapason"
+                android:text="Tuner"
+                />
+-->
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="0">
+
+
+            <EditText
+                android:id="@+id/filename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:background="#ffffffff"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <android.support.design.button.MaterialButton
+
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:id="@+id/supres"
+                android:text="Delete"
+                android:onClick="supress"
+                />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="0">
+
+
+
+        <!--
+                <Button
+
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/gotoimport"
+                    android:text="importfile"
+                    android:onClick="gotoimport"
+                    />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
